@@ -91,7 +91,6 @@ export PATH
 #now this is my shit
 export EDITOR=/usr/bin/vim
 alias sand="ssh pknight@sand.cise.ufl.edu"
-export HOMEBREW_GITHUB_API_TOKEN="ab51ff5475aa5ec4ef84876d00ef32f2e5358aa1"
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/parkerknight/anaconda/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
