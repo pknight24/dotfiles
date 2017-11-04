@@ -20,7 +20,7 @@ map <C-n> :NERDTreeToggle<CR>
 set term=xterm-256color 
 set background=dark
 syntax on
-let g:airline_theme='solarized'
+let g:airline_theme='raven'
 
 " Show line numbers
 set number
