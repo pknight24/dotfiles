@@ -9,6 +9,34 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function g()
+    {
+        cd `gsgd "$1"` || gsgd "$1"
+    }
 function g()
     {
         cd `gsgd "$1"` || gsgd "$1"

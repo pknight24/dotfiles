@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx)
+#plugins=(osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,6 +96,10 @@ export PATH="/Users/parkerknight/anaconda/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+function g()
+    {
+        cd `gsgd "$1"` || gsgd "$1"
+    }
 function g()
     {
         cd `gsgd "$1"` || gsgd "$1"
