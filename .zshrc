@@ -87,13 +87,16 @@ source $ZSH/oh-my-zsh.sh
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-
 #now this is my shit
 export EDITOR=/usr/bin/vim
 alias sand="ssh pknight@sand.cise.ufl.edu"
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/parkerknight/anaconda/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+alias raco="/Applications/Racket/bin/raco"
+alias racket="/Applications/Racket/bin/racket"
+
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 function g()
