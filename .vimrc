@@ -10,6 +10,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nerdtree/NERDTree'
 
 call vundle#end()
+
+execute pathogen#infect()
+
 filetype plugin indent on
 
 set backspace=indent,eol,start
