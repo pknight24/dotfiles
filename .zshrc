@@ -96,13 +96,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 alias raco="/Applications/Racket/bin/raco"
 alias racket="/Applications/Racket/bin/racket"
-
+alias clojure="java -cp ~/clojure-1.8.0/clojure-1.8.0.jar clojure.main"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-function g()
-    {
-        cd `gsgd "$1"` || gsgd "$1"
-    }
 function g()
     {
         cd `gsgd "$1"` || gsgd "$1"

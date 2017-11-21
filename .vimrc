@@ -16,6 +16,10 @@ set backspace=indent,eol,start
 
 map <C-n> :NERDTreeToggle<CR>
 
+if has("autocmd")
+  au BufReadPost *.rkt,*.rktl set filetype=scheme
+endif
+
 " aesthetic changes
 set term=xterm-256color 
 set background=dark
