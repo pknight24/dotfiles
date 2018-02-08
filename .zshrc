@@ -87,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
+export PATH="/Users/parkerknight/anaconda3/bin:$PATH"
+
 #now this is my shit
 export EDITOR=/usr/bin/vim
 alias sand="ssh pknight@sand.cise.ufl.edu"
@@ -96,10 +98,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 alias raco="/Applications/Racket/bin/raco"
 alias racket="/Applications/Racket/bin/racket"
-alias clojure="java -cp ~/clojure-1.8.0/clojure-1.8.0.jar clojure.main"
+alias dp="cd ~/Dropbox/programming"
+alias misc="dp;cd misc"
+alias home="cd ~;clear;"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-function g()
-    {
-        cd `gsgd "$1"` || gsgd "$1"
-    }
+
+wal -i ~/Documents/wallpapers/pastel_pool.png
+clear
+
+# OPAM configuration
+. /Users/parkerknight/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+eval `opam config env`
