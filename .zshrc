@@ -104,9 +104,6 @@ alias home="cd ~;clear;"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-wal -i ~/Documents/wallpapers/pastel_pool.png
-clear
-
 # OPAM configuration
 . /Users/parkerknight/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 eval `opam config env`
