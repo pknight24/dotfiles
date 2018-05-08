@@ -101,6 +101,7 @@ alias racket="/Applications/Racket/bin/racket"
 alias dp="cd ~/Dropbox/programming"
 alias misc="dp;cd misc"
 alias home="cd ~;clear;"
+alias research="cd ~/Documents/Research/"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
