@@ -17,6 +17,8 @@ alias misc="dp;cd misc"
 alias home="cd ~;clear;"
 alias research="cd ~/Documents/Research/"
 alias ls="ls -G"
+alias books="cd ~/Documents/books"
+alias now="cd ~/Dropbox/Summer-2018" # takes me to the files for the current semester
 
 # OPAM configuration
 . /Users/parkerknight/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

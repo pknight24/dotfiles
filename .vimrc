@@ -42,3 +42,7 @@ set expandtab
 set shiftwidth=2
 set showmode
 set relativenumber
+
+" personal mappings
+
+inoremap <C-f> <Esc>/<++><Enter>"_c4l
