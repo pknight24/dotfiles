@@ -35,6 +35,7 @@ set number
 " Allow hidden buffers, don't limit to 1 file per window/split
 set hidden
 set incsearch
+set hlsearch
 set scrolloff=5
 set tabstop=2
 set softtabstop=0
@@ -46,3 +47,4 @@ set relativenumber
 " personal mappings
 
 inoremap <C-f> <Esc>/<++><Enter>"_c4l
+autocmd FileType python inoremap ;f import<Space>sys<Enter><Enter>with<Space>open(sys.argv[1],<Space>"r")<Space>as<Space>f:<Enter>
