@@ -47,4 +47,5 @@ set relativenumber
 " personal mappings
 
 inoremap <C-f> <Esc>/<++><Enter>"_c4l
-autocmd FileType python inoremap ;f import<Space>sys<Enter><Enter>with<Space>open(sys.argv[1],<Space>"r")<Space>as<Space>f:<Enter>
+autocmd FileType python inoremap ;f #!<Space>Users/parkerknight/anaconda3/bin/python<Enter>import<Space>sys<Enter><Enter>with<Space>open(sys.argv[1],<Space>"r")<Space>as<Space>f:<Enter>text<Space>=<Space>f.read().strip()<Enter>
+autocmd FileType julia inoremap ;f #!<Space>/usr/local/bin/julia
