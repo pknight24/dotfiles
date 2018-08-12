@@ -7,6 +7,7 @@ call vundle#begin('~/.vim')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'nerdtree/NERDTree'
 
 call vundle#end()
@@ -48,4 +49,4 @@ set relativenumber
 
 inoremap <C-f> <Esc>/<++><Enter>"_c4l
 autocmd FileType python inoremap ;f #!<Space>Users/parkerknight/anaconda3/bin/python<Enter>import<Space>sys<Enter><Enter>with<Space>open(sys.argv[1],<Space>"r")<Space>as<Space>f:<Enter>text<Space>=<Space>f.read().strip()<Enter>
-autocmd FileType julia inoremap ;f #!<Space>/usr/local/bin/julia
+autocmd FileType julia inoremap ;f #!<Space>/usr/local/bin/julia<Enter><Enter>open(ARGS[1])<Space>do<Space>f<Enter><Space><Space><++><Enter>end
