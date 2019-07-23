@@ -1,3 +1,5 @@
+set shell=/bin/bash
+"
 "required settings for Vundle
 set nocompatible
 filetype off
@@ -7,8 +9,8 @@ call vundle#begin('~/.vim')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'nerdtree/NERDTree'
+Plugin 'jalvesaq/Nvim-R'
 
 call vundle#end()
 
@@ -19,10 +21,6 @@ filetype plugin indent on
 set backspace=indent,eol,start
 
 map <C-n> :NERDTreeToggle<CR>
-
-if has("autocmd")
-  au BufReadPost *.rkt,*.rktl set filetype=scheme
-endif
 
 " aesthetic changes
 set term=xterm-256color 
@@ -43,10 +41,7 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 set showmode
-set relativenumber
 
 " personal mappings
-
+au BufNewFile,BufRead *.pgn    setf pgn
 inoremap <C-f> <Esc>/<++><Enter>"_c4l
-autocmd FileType python inoremap ;f #!<Space>Users/parkerknight/anaconda3/bin/python<Enter>import<Space>sys<Enter><Enter>with<Space>open(sys.argv[1],<Space>"r")<Space>as<Space>f:<Enter>text<Space>=<Space>f.read().strip()<Enter>
-autocmd FileType julia inoremap ;f #!<Space>/usr/local/bin/julia<Enter><Enter>open(ARGS[1])<Space>do<Space>f<Enter><Space><Space><++><Enter>end
