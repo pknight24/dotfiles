@@ -25,6 +25,13 @@ There are two things you can do about this warning:
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; loads evil mode
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
+
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,7 +46,7 @@ There are two things you can do about this warning:
  '(ess-imenu-use-S nil)
  '(ess-toolbar-items nil)
  '(ess-use-toolbar nil)
- '(package-selected-packages (quote (solarized-theme))))
+ '(package-selected-packages (quote (evil solarized-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
