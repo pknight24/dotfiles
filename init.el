@@ -23,14 +23,16 @@ There are two things you can do about this warning:
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+;; (package-initialize)
 
 ;; loads evil mode
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
 
-
+;; set auto complete mode
+(ac-config-default)
+(global-auto-complete-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -46,7 +48,7 @@ There are two things you can do about this warning:
  '(ess-imenu-use-S nil)
  '(ess-toolbar-items nil)
  '(ess-use-toolbar nil)
- '(package-selected-packages (quote (evil solarized-theme))))
+ '(package-selected-packages (quote (auto-complete evil solarized-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -14,3 +14,5 @@ export FSLDIR="/usr/local/fsl"
 . /Users/parkerknight/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 eval `opam config env`
 export PATH=$PATH:/Users/parkerknight/abin
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
