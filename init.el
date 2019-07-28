@@ -30,6 +30,9 @@ There are two things you can do about this warning:
 (require 'evil)
 (evil-mode 1)
 
+(add-to-list 'load-path "~/.emacs.d/julia-mode")
+(require 'julia-mode)
+
 ;; set auto complete mode
 (ac-config-default)
 (global-auto-complete-mode t)

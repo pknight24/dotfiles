@@ -7,3 +7,7 @@ end
 function research
   cd ~/Documents/Research
 end
+
+function julia
+  exec '/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
+end
