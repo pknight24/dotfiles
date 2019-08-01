@@ -9,5 +9,5 @@ function research
 end
 
 function julia
-  exec '/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
+  '/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
 end
